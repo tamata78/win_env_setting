@@ -1,0 +1,24 @@
+# .bashrc
+HOME=/home/user_name
+export HOME
+PATH=$PATH:/home/user_name/
+export PATH
+
+# -------------------------------------
+# エイリアス
+# -------------------------------------
+
+# -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
+alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
+
+# 基本コマンドのalias
+#alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -a'
+alias up='cd ..; ls -l'
+alias j="z"
+alias brc='vi /home/user/.bashrc'
+alias his='history 50'
+
+# 移動を楽にするシェル
+source bin/z/z.sh

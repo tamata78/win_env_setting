@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="for using map template" enabled="true" name="formap">for(Map.Entry&lt;${argType}, ${argType}&gt; entry : ${iterator}.entrySet()) {&#13;
+    System.out.println(entry.getKey() + " : " + entry.getValue());&#13;
+}</template></templates>

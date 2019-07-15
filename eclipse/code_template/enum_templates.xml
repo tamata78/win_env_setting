@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="enum template" enabled="true" name="enum">  /** ${param}. **/&#13;
+  public enum ${ConstantsName} {&#13;
+    /** 定数1. */&#13;
+    CONSTANT1("1"),&#13;
+    /** 定数2. */&#13;
+    CONSTANT2("2"),&#13;
+&#13;
+    private final String ${field};&#13;
+&#13;
+    private ${ConstantsName}(String ${field}) {&#13;
+      this.${field} = ${field};&#13;
+    }&#13;
+&#13;
+    /**&#13;
+     * ${ConstantsName}を取得します.&#13;
+     * @return the ${ConstantsName}&#13;
+     */&#13;
+    public String getField() {&#13;
+      return ${field};&#13;
+    }&#13;
+  }&#13;
+</template></templates>

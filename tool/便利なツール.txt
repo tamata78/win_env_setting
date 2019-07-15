@@ -1,0 +1,29 @@
+winShot(画面キャプチャツール)
+http://www.forest.impress.co.jp/library/software/winshot/
+
+CLCL(クリップボート記録)
+http://www.forest.impress.co.jp/library/software/clcl/
+
+CLanch(ショートカット起動)
+http://www.forest.impress.co.jp/library/software/claunch/
+
+A5(DBアクセスツール)
+http://www.wind.sannet.ne.jp/m_matsu/developer/a5m2/
+
+Winmerge
+http://www.forest.impress.co.jp/library/software/winmerge/
+
+MCFLOCK 美麗な時計&カレンダー (自動時刻合わせ、スケジュール、メモ、タイマー、アラーム機能搭載)
+http://www.vector.co.jp/soft/win95/personal/se180799.html
+
+IPMSG
+http://www.forest.impress.co.jp/library/software/ipmsg/
+
+nami2000
+http://www.vector.co.jp/soft/dl/win95/writing/se101660.html
+
+ディレクトリの容量表示 FileSum
+http://www.vector.co.jp/soft/dl/win95/util/se030005.html
+
+シンプルで使いやすいハードディスクお掃除ソフト。
+http://www.gigafree.net/system/clean/ccleaner.html

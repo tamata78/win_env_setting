@@ -1,0 +1,37 @@
+HOSTADDR = 'XXXX.XXXX.XXXX.XXXX'
+USERNAME = 'ec2-user'
+KEY_FILE = 'C:\Users\user_name\Desktop\work\env\XXX.pem'
+COMMAND = HOSTADDR
+strconcat COMMAND ':22 /ssh /2 /auth=publickey /user='
+strconcat COMMAND USERNAME
+strconcat COMMAND ' /keyfile='
+strconcat COMMAND KEY_FILE
+connect COMMAND
+wait USERNAME
+sendln 'sudo su - app'
+sendln "alias la='ls -la --color=auto'"
+sendln "alias his='history'"
+sendln "alias cdtoc='cd /usr/share/tomcat/conf; ll'"
+sendln "alias tait='tail -F /usr/share/tomcat/logs/catalina.out'"
+sendln "alias taih='sudo tail -f /var/log/httpd/access_log'"
+sendln "alias llog='ll /var/app/log/`date '+%Y-%m-%d'`/'"
+
+unlink
+; Open a second tera term window
+HOSTADDR = 'XXXX.XXXX.XXXX.XXXX'
+USERNAME = 'ec2-user'
+KEY_FILE = 'C:\Users\user_name\Desktop\work\env\XXX.pem'
+COMMAND = HOSTADDR
+strconcat COMMAND ':22 /ssh /2 /auth=publickey /user='
+strconcat COMMAND USERNAME
+strconcat COMMAND ' /keyfile='
+strconcat COMMAND KEY_FILE
+connect COMMAND
+wait USERNAME
+sendln 'sudo su - app'
+sendln "alias la='ls -la --color=auto'"
+sendln "alias his='history'"
+sendln "alias cdtoc='cd /usr/share/tomcat/conf; ll'"
+sendln "alias tait='tail -F /usr/share/tomcat/logs/catalina.out'"
+sendln "alias taih='sudo tail -f /var/log/httpd/access_log'"
+sendln "alias llog='ll /var/app/log/`date '+%Y-%m-%d'`/'"
