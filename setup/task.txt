@@ -1,0 +1,44 @@
+# git bash
+
+# inst way
+https://qiita.com/toshi-click/items/dcf3dd48fdc74c91b409
+
+# setting home and current directory by command pronpt
+```
+C:\Windows\System32\cmd.exe /c "mkdir C:\Users\%username%\work & set HOME=C:\Users\%username%\work&"C:\Program Files\Git\bin\sh.exe" --login -i"
+%HOMEDRIVE%%HOMEPATH%\work
+```
+
+windows10 「Win + S」move search window. git bash run
+
+# apply name, email to settings
+```
+$ pwd
+/c/Users/username/work
+
+$ git config --global user.name "TaroYamada"
+$ git config --global user.email "taro.yamada@email.com"
+
+$ git config -l
+user.name=TaroYamada
+user.email=taro.yamada@email.com
+```
+
+# Github ssh setting
+```
+$ ssh-keygen -t rsa -b 4096 -C '5101956+tamata78@users.noreply.github.com'
+
+# copy pub_key to clipboad, set pub_key to github ssh key setting
+$ clip < ~/.ssh/id_rsa.pub
+
+# check connect with github
+$ ssh -T git@github.com
+```
+
+# dotfiles setting
+```
+touch ~/.bash_profile
+echo "export MSYS=winsymlinks:nativestrict" >> ~/.bash_profile
+source ~/.bash_profile # if it doesnot start restart
+```
+
