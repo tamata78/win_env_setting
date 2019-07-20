@@ -14,14 +14,9 @@ windows10 「Win + S」move search window. git bash run
 # apply name, email to settings
 ```
 $ pwd
-/c/Users/username/work
-
-$ git config --global user.name "TaroYamada"
-$ git config --global user.email "taro.yamada@email.com"
-
+$ git config --global user.name "tamata78"
+$ git config --global user.email "5101956+tamata78@users.noreply.github.com"
 $ git config -l
-user.name=TaroYamada
-user.email=taro.yamada@email.com
 ```
 
 # Github ssh setting
@@ -37,8 +32,11 @@ $ ssh -T git@github.com
 
 # dotfiles setting
 ```
+# Set symlink creation authority
 touch ~/.bash_profile
 echo "export MSYS=winsymlinks:nativestrict" >> ~/.bash_profile
 source ~/.bash_profile # if it doesnot start restart
+
+
 ```
 
