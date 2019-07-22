@@ -3,15 +3,15 @@
 # setting dotfiles
 git clone git@github.com:tamata78/dotfiles.git
 
-cd dotfiles
-./dotfilesLink_only_bash.sh
+./dotfiles/dotfilesLink_only_bash.sh
 
 # Set z tool(directory transfer efficienty)
-cp -rp linuxCmd/z /usr/local/bin/
+git clone http://github.com/b4b4r07/enhancd.git
+source ~/enhancd/init.sh
 
-# Set PATH
-echo "export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" >> ~/.bash_profile
-source ~/.bash_profile
+# setup env where only bash can be used
+cp -f .bash_profile_only .bash_profile
+cp -f .bashrc_only .bashrc
 
 if [ $? = 0 ]; then
   echo "complete linux env setting for windows"
