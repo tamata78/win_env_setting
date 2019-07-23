@@ -30,13 +30,3 @@ $ clip < ~/.ssh/id_rsa.pub
 $ ssh -T git@github.com
 ```
 
-# dotfiles setting
-```
-# Set symlink creation authority
-touch ~/.bash_profile
-echo "export MSYS=winsymlinks:nativestrict" >> ~/.bash_profile
-source ~/.bash_profile # if it doesnot start restart
-
-
-```
-

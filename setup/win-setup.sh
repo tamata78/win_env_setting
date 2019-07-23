@@ -5,7 +5,7 @@ git clone git@github.com:tamata78/dotfiles.git
 
 ./dotfiles/dotfilesLink_only_bash.sh
 
-# Set z tool(directory transfer efficienty)
+# Set enhancd (directory transfer efficienty)
 git clone http://github.com/b4b4r07/enhancd.git
 source ~/enhancd/init.sh
 
