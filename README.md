@@ -3,7 +3,7 @@
 ## inst git bash
 open command pronpt,  the following command execute
 ```
-C:\Windows\System32\cmd.exe /c "mkdir C:\Users\%username%\work\sandbox & cd C:\Users\%username%\work\sandbox"
+mkdir C:\Users\%username%\work\sandbox && C:\Users\%username%\work\sandbox
 ```
 access to https://github.com/tamata78/win_env_setting/archive/master.zip
 
@@ -13,10 +13,12 @@ access to https://github.com/tamata78/win_env_setting/archive/master.zip
 - exec chocolatey/chocolatey-install-all.bat
 
 ##  set home and current dir for git bash
-open command pronpt,  the following command execute
 ```
-C:\Windows\System32\cmd.exe /c "set HOME=C:\Users\%username%\work&"C:\Program Files\Git\bin\sh.exe" --login -i"
-%HOMEDRIVE%%HOMEPATH%\work
+The dialog "Git Bash Properties" opens.
+Open the "Shortcuts" tab of the dialog.
+In the "Link to(T)" field, select 「C:\Windows\System32\cmd.exe /c "set HOME=C:\Users\%username%\work&"C:\Program Files\Git\bin\sh.exe" --login -i"」
+Set the "Working folder(S)" field to "%HOMEDRIVE%%HOMEPATH%\work".
+Click the [Apply] button.
 ```
 windows10 「Win + S」move search window. git bash run
 

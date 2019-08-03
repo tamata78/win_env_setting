@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 # setting dotfiles
 cd; git clone git@github.com:tamata78/dotfiles.git
