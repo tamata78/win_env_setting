@@ -1,12 +1,15 @@
 !#/bin/bash
 
 # for svn
+# ref_url ettp://www.thekyo.jp/manual/subversion/svn.ref.html
 alias svn="colorsvn"
 alias sst='svn st'
 alias sad='svn add'
-alias sup='svn up'
-alias sci='svn ci'
-alias sco='svn co'
+alias sup='svn up' # update
+alias sci='svn ci' # commit
+alias sco='svn co' # check out
+alias scp='svn cp' # create branch, tag
+alias ssw='svn sw' # swich branch, tag
 alias sin='svn info'
 alias sme='svn merge'
 alias sre='svn revert'
