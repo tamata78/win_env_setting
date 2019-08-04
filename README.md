@@ -1,18 +1,18 @@
-# win_env_setting
+#  win_env_setting
 
-## inst git bash
+## 1 inst git bash
 open command pronpt,  the following command execute
 ```
 mkdir C:\Users\%username%\work\sandbox && C:\Users\%username%\work\sandbox
 ```
 access to https://github.com/tamata78/win_env_setting/archive/master.zip
 
-## inst windows apps
+## 2 inst windows apps
 - comment out apps that you don't install in chocolatey/packages.config
 - open command pronpt by admin authority
 - exec chocolatey/chocolatey-install-all.bat
 
-##  set home and current dir for git bash
+## 3 set home and current dir for git bash
 ```
 The dialog "Git Bash Properties" opens.
 Open the "Shortcuts" tab of the dialog.
@@ -22,7 +22,7 @@ Click the [Apply] button.
 ```
 windows10 「Win + S」move search window. git bash run
 
-# apply name, email to git config
+## 4 apply name, email to git config
 ```
 $ pwd
 $ git config --global user.name "tamata78"
@@ -30,7 +30,7 @@ $ git config --global user.email "5101956+tamata78@users.noreply.github.com"
 $ git config -l
 ```
 
-# Github ssh setting
+## 5 Github ssh setting
 ```
 $ ssh-keygen -t rsa -b 4096 -C '5101956+tamata78@users.noreply.github.com'
 
@@ -40,6 +40,11 @@ $ clip < ~/.ssh/id_rsa.pub
 # check connect with github
 $ ssh -T git@github.com
 ```
-## set dotfiles, enhancd
+## 6 set dotfiles, enhancd
 ./win_env_setting/setup/win-setup.sh
 
+# delete setting env
+open command pronpt,  the following command execute
+```
+./win_env_setting/close/close_dev_env.bat
+```
