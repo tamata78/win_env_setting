@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 # added .bash_profile below when use svn in dev env
 # [ -f ~/win_env_setting/setup/setting_svn_conf.sh ] && . ~/win_env_setting/setup/setting_svn_conf.sh
