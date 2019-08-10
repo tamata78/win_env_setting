@@ -4,7 +4,6 @@
 # [ -f ~/win_env_setting/setup/setting_svn_conf.sh ] && . ~/win_env_setting/setup/setting_svn_conf.sh
 
 # for svn
-alias svn="colorsvn"
 alias sst='svn st'
 alias sad='svn add'
 alias sup='svn up' # update
