@@ -22,9 +22,8 @@ sl(){
     svn log -l $1 -v
 }
 
-# svn diff
+# svn diff ignore diff of white space, indent
 sdi(){
-    # diff ignore diff of white space, indent
     svn diff -x --ignore-eol-style $1 | vim -R -
 }
 
