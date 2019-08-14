@@ -1,0 +1,29 @@
+'
+' If
+'
+Dim iNgChars As Long
+
+If Len(iNgChars) > 0 Then
+  MsgBox "IF内です"
+Else
+  MsgBox "ELSE内です"
+End If
+
+'
+' ループ処理
+'
+
+' 一文字ずつチェック
+
+Dim data As String
+Dim charCnt As Long
+Dim char As String
+
+For charCnt = 1 To Len(data)
+    char = Mid(data, charCnt, 1) 'Mid param: str, startIndex, extraction_length
+    
+    If char = "X" Then
+       MsgBox "Xが入っています"
+    End If
+Next
+
