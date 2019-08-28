@@ -27,4 +27,7 @@ sdi(){
     svn diff -x --ignore-eol-style $1 | vim -R -
 }
 
+# merge usage
+# svn merge -r [fromRev]:[toRev] [mergeSourceURL]
+
 # ref_url ettp://www.thekyo.jp/manual/subversion/svn.ref.html
