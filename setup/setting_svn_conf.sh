@@ -29,5 +29,6 @@ sdi(){
 
 # merge usage
 # svn merge -r [fromRev]:[toRev] [mergeSourceURL]
+# svn ci -m 'merge message'
 
 # ref_url ettp://www.thekyo.jp/manual/subversion/svn.ref.html
